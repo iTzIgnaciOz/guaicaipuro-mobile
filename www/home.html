@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script>
+		if(!window.localStorage.getItem("username")){
+			window.location.href="landing.html";
+		}
+	</script>
+	<title>Material Admin - Blank page</title>
+
+	<!-- BEGIN META -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="your,keywords">
+	<meta name="description" content="Short explanation about this website">
+	<!-- END META -->
+
+	<!-- BEGIN STYLESHEETS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300italic,400italic,300,400,500,700,900' rel='stylesheet' type='text/css'/>
+	<link type="text/css" rel="stylesheet" href="css/theme/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="css/theme/materialadmin.css" />
+	<link type="text/css" rel="stylesheet" href="css/theme/font-awesome.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/theme/material-design-iconic-font.min.css" />
+	<!-- END STYLESHEETS -->
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../js/libs/utils/html5shiv.js?1403934957"></script>
+		<script type="text/javascript" src="../js/libs/utils/respond.min.js?1403934956"></script>
+		<![endif]-->
+	</head>
+	<body class="menubar-hoverable menubar-pin ">
+
+		<!-- BEGIN HEADER-->
+		<header id="header" >
+			<div class="headerbar">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="headerbar-left">
+					<ul class="header-nav header-nav-options">
+						<li class="header-nav-brand" >
+							<div class="brand-holder">
+								<a href="../../html/dashboards/dashboard.html">
+									<span class="text-lg text-bold text-primary">MPPE</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<a class="btn btn-icon-toggle menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+								<i class="fa fa-bars"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="headerbar-right">
+					<ul class="header-nav header-nav-options">
+
+						<li class="dropdown hidden-xs">
+							<a href="javascript:void(0);" class="btn btn-icon-toggle btn-default" data-toggle="dropdown">
+								<i class="fa fa-bell"></i>
+								<!--<sup class="badge style-danger">1</sup>-->
+							</a>
+							<ul class="dropdown-menu animation-expand">
+								<li class="dropdown-header">Notificaciones</li>
+
+								<li>
+									<a class="alert alert-callout alert-info" href="javascript:void(0);">
+										<strong>Usted no ha recibido ninguna noticia.</strong><br/>
+										<small></small>
+									</a>
+								</li>
+								<!--<li class="dropdown-header">Opciones</li>
+								<li><a href="../../html/pages/login.html">Ver todas las notificaciones <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>-->
+								
+							</ul><!--end .dropdown-menu -->
+						</li><!--end .dropdown -->
+						
+					</ul><!--end .header-nav-options -->
+					<ul class="header-nav header-nav-profile">
+						<li class="dropdown">
+							<a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown">
+								<img src="img/avatar_default.png" alt="" />
+								<span class="profile-info">
+									
+									<small></small>
+								</span>
+							</a>
+							<ul class="dropdown-menu animation-dock">
+								<li><a onclick="logout()"><i class="fa fa-fw fa-power-off text-danger"></i> Salir</a></li>
+							</ul><!--end .dropdown-menu -->
+						</li><!--end .dropdown -->
+					</ul><!--end .header-nav-profile -->
+					<ul class="header-nav header-nav-toggle">
+						<li>
+							<a class=" hide btn btn-icon-toggle btn-default" href="#offcanvas-search" data-toggle="offcanvas" data-backdrop="false">
+								<i class="fa fa-ellipsis-v"></i>
+							</a>
+						</li>
+					</ul><!--end .header-nav-toggle -->
+				</div><!--end #header-navbar-collapse -->
+			</div>
+		</header>
+		<!-- END HEADER-->
+
+		<!-- BEGIN BASE-->
+		<div id="base">
+
+			<!-- BEGIN OFFCANVAS LEFT -->
+			<div class="offcanvas">
+			</div><!--end .offcanvas-->
+			<!-- END OFFCANVAS LEFT -->
+
+			<!-- BEGIN CONTENT-->
+			<div id="content">
+
+				<!-- BEGIN BLANK SECTION -->
+				<section>
+					<div class="section-header">
+						<ol class="breadcrumb">
+							<li><a href="home.html">Inicio</a></li>
+							<li class="active">Estadisticas</li>
+							<li>Salir</li>
+						</ol>
+					</div><!--end .section-header -->
+					<div class="section-body">
+
+
+
+						
+
+						<div class="col-md-12">
+
+							<div class="card">
+								<div class="card-head">
+									<header> Guaicaipuro <small class="fecha"></small></header>
+									<div class="tools">
+										<!--<a class="btn btn-icon-toggle btn-refresh"><i class="md md-refresh"></i></a>-->
+										<a class="btn btn-icon-toggle btn-collapse"><i class="fa fa-angle-down"></i></a>
+									</div>
+								</div>
+								<div class="card-body" >
+
+									<div class="table-responsive" id = "card-body-guaicaipuro">	
+
+
+									</div>
+
+								</div><!--end .card-body -->
+							</div>
+
+						</div><!--end .col -->
+					</div><!--end .row -->
+
+					<div class="col-md-12">
+
+						<div class="card">
+							<div class="card-head">
+								<header> Sigefirhh <small class="fecha"></small> </header>
+								<div class="tools">
+									<!--<a class="btn btn-icon-toggle btn-refresh"><i class="md md-refresh"></i></a>-->
+									<a class="btn btn-icon-toggle btn-collapse"><i class="fa fa-angle-down"></i></a>
+								</div>
+							</div>
+							<div class="card-body" >
+
+								<div class="table-responsive" id = "card-body-sigefirhh">	
+
+
+									
+								</div>
+
+							</div><!--end .card-body -->
+						</div>
+
+					</div><!--end .col -->
+				</div><!--end .row -->
+			</div><!--end .section-body -->
+		</section>
+
+		<!-- BEGIN BLANK SECTION -->
+	</div><!--end #content-->
+	<!-- END CONTENT -->
+
+	<!-- BEGIN MENUBAR-->
+	<div id="menubar" class="menubar-inverse ">
+		<div class="menubar-fixed-panel">
+			<div>
+				<a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+			<div class="expanded">
+				<a href="../../html/dashboards/dashboard.html">
+					<span class="text-lg text-bold text-primary ">MPPE</span>
+				</a>
+			</div>
+		</div>
+		<div class="menubar-scroll-panel">
+
+			<!-- BEGIN MAIN MENU -->
+			<ul id="main-menu" class="gui-controls">
+
+
+				<!-- BEGIN CHARTS -->
+				<li>
+					<a href="home.html" >
+						<div class="gui-icon"><i class="md md-assessment"></i></div>
+						<span class="title">Estadisticas</span>
+					</a>
+				</li><!--end /menu-li -->
+
+				<!-- END CHARTS -->
+
+				<li>
+					<a onclick="logout()" >
+						<div class="gui-icon"><i class="fa fa-power-off"></i></div>
+						<span class="title">Salir</span>
+					</a>
+				</li>
+
+
+			</ul><!--end .main-menu -->
+			<!-- END MAIN MENU -->
+
+			<div class="menubar-foot-panel">
+				<small class="no-linebreak hidden-folded">
+					<span class="opacity-75"><strong>MPPE</strong> &copy; 2015</span> 
+				</small>
+			</div>
+		</div><!--end .menubar-scroll-panel-->
+	</div><!--end #menubar-->
+	<!-- END MENUBAR -->
+
+	<!-- BEGIN OFFCANVAS RIGHT -->
+	<div class="offcanvas">
+
+		<!-- BEGIN OFFCANVAS SEARCH -->
+		<div id="offcanvas-search" class="offcanvas-pane width-8">
+			<div class="offcanvas-head">
+				<header class="text-primary">Representados</header>
+				<div class="offcanvas-tools">
+					<a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas">
+						<i class="md md-close"></i>
+					</a>
+				</div>
+			</div>
+			<div class="offcanvas-body no-padding">
+				<ul class="list ">
+					<!--
+						<li class="tile divider-full-bleed">
+						</li>
+						<li class="tile">
+							<a class="tile-content ink-reaction" href="#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
+								<div class="tile-icon">
+									<img src="img/alert.png" alt="" />
+								</div>
+								<div class="tile-text">
+									No tiene.
+								</div>
+							</a>
+						</li>
+
+							
+							<li class="tile divider-full-bleed">
+								<div class="tile-content">
+									<div class="tile-text"><strong>J</strong></div>
+								</div>
+							</li>
+							<li class="tile">
+								<a class="tile-content ink-reaction" href="#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
+									<div class="tile-icon">
+										<img src="../img/avatar2.jpg?1404026449" alt="" />
+									</div>
+									<div class="tile-text">
+										Jessica Cruise
+										<small>123-123-3210</small>
+									</div>
+								</a>
+							</li>
+							<li class="tile">
+								<a class="tile-content ink-reaction" href="#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
+									<div class="tile-icon">
+										<img src="../img/avatar8.jpg" alt="" />
+									</div>
+									<div class="tile-text">
+										Jim Peters
+										<small>123-123-3210</small>
+									</div>
+								</a>
+							</li>
+							<li class="tile divider-full-bleed">
+								<div class="tile-content">
+									<div class="tile-text"><strong></strong></div>
+								</div>
+							</li>
+							<li class="tile">
+								<a class="tile-content ink-reaction" href="#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
+									<div class="tile-icon">
+										<img src="img/alert.png" alt="" />
+									</div>
+									<div class="tile-text">
+										No Tiene
+										<small>GUAICAIPURO - mobile </small>
+									</div>
+								</a>
+							</li>
+							
+							<li class="tile">
+								<a class="tile-content ink-reaction" href="#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
+									<div class="tile-icon">
+										<img src="../img/avatar11.jpg?1404026774" alt="" />
+									</div>
+									<div class="tile-text">
+										Mary Peterson
+										<small>123-123-3210</small>
+									</div>
+								</a>
+							</li>
+							<li class="tile">
+								<a class="tile-content ink-reaction" href="#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
+									<div class="tile-icon">
+										<img src="../img/avatar3.jpg?1404026799" alt="" />
+									</div>
+									<div class="tile-text">
+										Mike Alba
+										<small>123-123-3210</small>
+									</div>
+								</a>
+							</li>
+							<li class="tile divider-full-bleed">
+								<div class="tile-content">
+									<div class="tile-text"><strong>N</strong></div>
+								</div>
+							</li>
+							<li class="tile">
+								<a class="tile-content ink-reaction" href="#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
+									<div class="tile-icon">
+										<img src="../img/avatar6.jpg?1404026572" alt="" />
+									</div>
+									<div class="tile-text">
+										Nathan Peterson
+										<small>123-123-3210</small>
+									</div>
+								</a>
+							</li>
+							<li class="tile divider-full-bleed">
+								<div class="tile-content">
+									<div class="tile-text"><strong>P</strong></div>
+								</div>
+							</li>
+							<li class="tile">
+								<a class="tile-content ink-reaction" href="#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
+									<div class="tile-icon">
+										<img src="../img/avatar7.jpg?1404026721" alt="" />
+									</div>
+									<div class="tile-text">
+										Philip Ericsson
+										<small>123-123-3210</small>
+									</div>
+								</a>
+							</li>
+							
+							<li class="tile divider-full-bleed">
+								<div class="tile-content">
+									<div class="tile-text"><strong>S</strong></div>
+								</div>
+							</li>
+							<li class="tile">
+								<a class="tile-content ink-reaction" href="#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
+									<div class="tile-icon">
+										<img src="../img/avatar10.jpg?1404026762" alt="" />
+									</div>
+									<div class="tile-text">
+										Samuel Parsons
+										<small>123-123-3210</small>
+									</div>
+								</a>
+							</li>
+						-->
+					</ul>
+				</div><!--end .offcanvas-body -->
+			</div><!--end .offcanvas-pane -->
+			<!-- END OFFCANVAS SEARCH -->			
+		</div><!--end .offcanvas-->
+		<!-- END OFFCANVAS RIGHT -->
+
+	</div><!--end #base-->
+	<!-- END BASE -->
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+		<!-- Libs 
+		<script type="text/javascript" src="phonegap.js"></script>
+		<script type="text/javascript" src="lib/angular/angular.js"></script>
+		<script type="text/javascript" src="lib/angular/angular-route.js"></script>
+	-->
+	<!--Dependencias Theme-->
+	<script src="plugins/js/libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="plugins/js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
+	<script src="plugins/js/libs/bootstrap/bootstrap.min.js"></script>
+	<script src="plugins/js/libs/spin.js/spin.min.js"></script>
+	<script src="plugins/js/libs/autosize/jquery.autosize.min.js"></script>
+	<script src="plugins/js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
+	<script src="plugins/js/core/source/App.js"></script>
+	<script src="plugins/js/core/source/AppNavigation.js"></script>
+	<script src="plugins/js/core/source/AppOffcanvas.js"></script>
+	<script src="plugins/js/core/source/AppCard.js"></script>
+	<script src="plugins/js/core/source/AppForm.js"></script>
+	<script src="plugins/js/core/source/AppNavSearch.js"></script>
+	<script src="plugins/js/core/source/AppVendor.js"></script>
+	<script src="plugins/js/core/demo/Demo.js"></script>
+	<script src="js/moment-with-locales.js"></script>
+	<script type="text/javascript">
+		app.initialize();
+		$(document).ready(function(){
+			var fecha_actual = moment().locale("es").format('LLLL');
+
+			$('.fecha').html(fecha_actual);
+			var nombre = window.localStorage.getItem("nombre");
+			var apellido  = window.localStorage.getItem("apellido");
+			var username  = window.localStorage.getItem("username");
+
+
+			var html = nombre+' '+apellido+' <small>'+ username +'</small>';
+
+			$('.profile-info').html(html);
+
+
+
+			$.ajax({
+				type:'GET',
+				data:{action:'guaicaipuro'},
+				url:'http://estadistica.gescolar.me.gob.ve/',
+				dataType:'html',
+				beforeSend:function(){
+                //$('.loader').removeClass('hide');
+            },
+            success:function(response){
+
+            	$('#card-body-guaicaipuro').html(response);
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+     // $('.loader').addClass('hide');
+     $('#card-body-guaicaipuro').html(xhr.status );
+      //toastr.error(  xhr.status+' '+thrownError,'');
+        //alert(xhr.status);
+        //alert(thrownError);
+    }
+});
+
+			$.ajax({
+				type:'GET',
+				data:{action:'sigefirhh'},
+				url:'http://estadistica.gescolar.me.gob.ve/',
+				dataType:'html',
+				beforeSend:function(){
+                //$('.loader').removeClass('hide');
+            },
+            success:function(response){
+
+            	$('#card-body-sigefirhh').html(response);
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+     // $('.loader').addClass('hide');
+     $('#card-body-sigefirhh').html(xhr.status );
+      //toastr.error(  xhr.status+' '+thrownError,'');
+        //alert(xhr.status);
+        //alert(thrownError);
+    }
+});
+
+		});
+
+function logout(){
+	window.localStorage.clear();
+	window.location.href="landing.html";
+};
+</script>
+</body>
+</html>
